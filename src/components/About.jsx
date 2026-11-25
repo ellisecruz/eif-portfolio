@@ -1,4 +1,4 @@
-import { about } from "../content/site.js";
+import { about, publicAsset } from "../content/site.js";
 import { Prose } from "./Prose.jsx";
 import { SectionDivider } from "./SectionDivider.jsx";
 import { Strawberry } from "./PixelArt.jsx";
@@ -15,7 +15,7 @@ export function About() {
             <figure className="portrait">
               <img
                 className="portrait-photo"
-                src="/profile-photo.jpg"
+                src={publicAsset("profile-photo.jpg")}
                 alt="Portrait of Hannah Ellise L. Cruz"
               />
             </figure>

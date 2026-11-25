@@ -8,11 +8,15 @@
  * Email href: "mailto:you@school.edu" or "you@school.edu"
  * Other links: full https URL
  * Screenshots: put files in public/screenshots, then set image src to
- * "/screenshots/your-file.png" and pending to false.
+ * publicAsset("screenshots/your-file.png").
  *
  * To add a project, copy the ElliCess object, change the id, and fill the fields.
  * Set showEmptySlot to false when you no longer want the spare card.
  */
+
+export function publicAsset(path) {
+  return `${import.meta.env.BASE_URL}${path}`;
+}
 
 export const profile = {
   name: "Hannah Ellise L. Cruz",
@@ -107,19 +111,19 @@ export const projects = [
       "An AI-powered college admissions advisor console for centralized, revisitable CET guidance.",
     images: [
       {
-        src: "/screenshots/ellicess-sign-in.png",
+        src: publicAsset("screenshots/ellicess-sign-in.png"),
         alt: "ElliCess sign-in screen",
       },
       {
-        src: "/screenshots/ellicess-advisor-console.png",
+        src: publicAsset("screenshots/ellicess-advisor-console.png"),
         alt: "ElliCess college admissions advisor console",
       },
       {
-        src: "/screenshots/ellicess-advisor-response.png",
+        src: publicAsset("screenshots/ellicess-advisor-response.png"),
         alt: "ElliCess advisor responding to a college admissions question",
       },
       {
-        src: "/screenshots/ellicess-prompt-safety.png",
+        src: publicAsset("screenshots/ellicess-prompt-safety.png"),
         alt: "ElliCess refusing a request to reveal its system prompt",
       },
     ],
@@ -198,55 +202,55 @@ export const projects = [
       "An async project gallery and collaboration platform for fellowship interns.",
     images: [
       {
-        src: "/screenshots/showcase-sign-in.png",
+        src: publicAsset("screenshots/showcase-sign-in.png"),
         alt: "SHOWCASE sign-in page",
       },
       {
-        src: "/screenshots/showcase-home.png",
+        src: publicAsset("screenshots/showcase-home.png"),
         alt: "SHOWCASE home page and project gallery introduction",
       },
       {
-        src: "/screenshots/showcase-gallery.png",
+        src: publicAsset("screenshots/showcase-gallery.png"),
         alt: "SHOWCASE project gallery with search and learning-track filters",
       },
       {
-        src: "/screenshots/showcase-project-detail.png",
+        src: publicAsset("screenshots/showcase-project-detail.png"),
         alt: "SHOWCASE project detail page",
       },
       {
-        src: "/screenshots/showcase-project-activity.png",
+        src: publicAsset("screenshots/showcase-project-activity.png"),
         alt: "SHOWCASE project page with weekly updates and comments",
       },
       {
-        src: "/screenshots/showcase-create-project.png",
+        src: publicAsset("screenshots/showcase-create-project.png"),
         alt: "SHOWCASE create-project form",
       },
       {
-        src: "/screenshots/showcase-search.png",
+        src: publicAsset("screenshots/showcase-search.png"),
         alt: "SHOWCASE project search results",
       },
       {
-        src: "/screenshots/showcase-profile.png",
+        src: publicAsset("screenshots/showcase-profile.png"),
         alt: "SHOWCASE community profile page",
       },
       {
-        src: "/screenshots/showcase-weekly-digest.png",
+        src: publicAsset("screenshots/showcase-weekly-digest.png"),
         alt: "SHOWCASE weekly digest page",
       },
       {
-        src: "/screenshots/showcase-notifications.png",
+        src: publicAsset("screenshots/showcase-notifications.png"),
         alt: "SHOWCASE notifications page",
       },
       {
-        src: "/screenshots/showcase-lead-view.png",
+        src: publicAsset("screenshots/showcase-lead-view.png"),
         alt: "SHOWCASE lead view with project check-ins and track digests",
       },
       {
-        src: "/screenshots/showcase-admin-overview.png",
+        src: publicAsset("screenshots/showcase-admin-overview.png"),
         alt: "SHOWCASE administration with learning tracks and member settings",
       },
       {
-        src: "/screenshots/showcase-admin-moderation.png",
+        src: publicAsset("screenshots/showcase-admin-moderation.png"),
         alt: "SHOWCASE administration with member roles and content moderation",
       },
     ],
