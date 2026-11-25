@@ -6,7 +6,7 @@ import { Strawberry } from "./PixelArt.jsx";
 export function About() {
   return (
     <>
-      <SectionDivider />
+      <SectionDivider showStrawberry={false} />
       <section id="about" className="section">
         <div className="section-inner">
           <p className="eyebrow">02 · About</p>

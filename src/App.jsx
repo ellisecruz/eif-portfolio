@@ -5,6 +5,7 @@ import { Welcome } from "./components/Welcome.jsx";
 import { About } from "./components/About.jsx";
 import { Journey } from "./components/Journey.jsx";
 import { Projects } from "./components/Projects.jsx";
+import { Webinar } from "./components/Webinar.jsx";
 import { ProjectDialog } from "./components/ProjectDialog.jsx";
 import { Journal } from "./components/Journal.jsx";
 import { NextAdventure } from "./components/NextAdventure.jsx";
@@ -58,6 +59,7 @@ export default function App() {
         <About />
         <Journey />
         <Projects onOpen={openById} />
+        <Webinar />
         <Journal />
         <NextAdventure />
       </main>

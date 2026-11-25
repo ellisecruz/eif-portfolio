@@ -50,6 +50,7 @@ export const nav = [
   { id: "about", href: "#about", label: "About" },
   { id: "journey", href: "#journey", label: "Journey" },
   { id: "projects", href: "#projects", label: "Projects" },
+  { id: "webinar", href: "#webinar", label: "Webinar" },
   { id: "journal", href: "#journal", label: "Journal" },
   { id: "next", href: "#next", label: "Next" },
 ];
@@ -338,6 +339,16 @@ export const projects = [
     },
   },
 ];
+
+export const webinar = {
+  title: "Beyond Check-Ins: Using AI to Rethink Internship Support",
+  feature: "Showcase: Making Projects Visible Through AI",
+  description:
+    "Discover how Showcase uses AI to simplify project sharing and make internship work more visible. Learn how AI can generate structured project summaries from GitHub repositories, improve project discoverability, and support collaboration while keeping users in control. The webinar also highlights practical AI applications, automation strategies, and key lessons in building meaningful AI-powered solutions.",
+  image: publicAsset("webinar-poster.png"),
+  imageAlt:
+    "Webinar poster for Beyond Check-Ins: Using AI to Rethink Internship Support, featuring Hannah Ellise L. Cruz and Princess Giron.",
+};
 
 export const showEmptySlot = false;
 

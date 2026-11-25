@@ -20,8 +20,8 @@ export function Projects({ onOpen }) {
         <div className="section-inner">
           <p className="eyebrow">04 · Projects</p>
           <h2>Things I've Built Along the Way</h2>
-          <p className="lede">
-            Open a card to read the problem, my part in the work, what we delivered, and what I learned.
+          <p className="lede card-aligned-copy">
+            Select a project to learn about the problem, my contributions, what we built, and what I learned.
           </p>
           <div className="project-grid">
             {projects.map((project) => (

@@ -8,9 +8,9 @@ export function NextAdventure() {
       <SectionDivider />
       <section id="next" className="section">
         <div className="section-inner">
-          <p className="eyebrow">06 · Next</p>
+          <p className="eyebrow">07 · Next</p>
           <h2>The Next Adventure</h2>
-          <p className="lede">{nextAdventure.direction}</p>
+          <p className="lede card-aligned-copy">{nextAdventure.direction}</p>
           <div className="next-layout">
             {nextAdventure.fields.map((field) => (
               <article key={field.label} className="panel">
